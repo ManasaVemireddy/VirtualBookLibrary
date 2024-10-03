@@ -1,0 +1,47 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50px; /* Smooth rounded edges */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth shadow change */
+}
+
+.search-bar:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly increased shadow on hover */
+}
+
+.search-bar input {
+  border: none; /* Remove default border */
+  outline: none; /* Remove default focus outline */
+  flex-grow: 1; /* Take up available space */
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  background: transparent; /* Transparent input background */
+}
+
+.search-bar input::placeholder {
+  color: #aaa; /* Lighter color for placeholder */
+}
+
+.search-bar button {
+  border: none;
+  background-color: #61dafb; /* Accent color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px; /* Space between input and button */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.search-bar button:hover {
+  background-color: #4a9fdc; /* Darker shade on hover */
+}

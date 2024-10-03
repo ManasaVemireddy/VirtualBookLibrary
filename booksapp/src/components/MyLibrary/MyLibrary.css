@@ -1,0 +1,62 @@
+.my-library {
+  padding: 20px;
+  font-family: 'Arial', sans-serif; /* Set a clean, modern font */
+  text-align: center; /* Center all text in the library */
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.book-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center; /* Ensure cards are centered */
+}
+
+.book-card {
+  background: #fff; /* Set a clean white background */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center; /* Ensure text inside the card is centered */
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #333; /* Darker color for better contrast */
+}
+
+.book-author {
+  font-size: 1.1em;
+  color: #777; /* Slightly lighter color for author text */
+  margin-bottom: 10px;
+}
+
+.remove-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top:20px;
+  transition: background-color 0.2s;
+  font-size: 1em; /* Slightly increase button text size */
+}
+
+.remove-button:hover {
+  background-color: #ff1a1a;
+}
